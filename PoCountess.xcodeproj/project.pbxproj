@@ -8,22 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		462E52C7283E45ED007690ED /* PoCountessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52C6283E45ED007690ED /* PoCountessApp.swift */; };
-		462E52C9283E45ED007690ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52C8283E45ED007690ED /* ContentView.swift */; };
 		462E52CB283E45ED007690ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462E52CA283E45ED007690ED /* Assets.xcassets */; };
 		462E52CE283E45ED007690ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 462E52CD283E45ED007690ED /* Preview Assets.xcassets */; };
-		462E52D0283E45ED007690ED /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52CF283E45ED007690ED /* Persistence.swift */; };
-		462E52D3283E45ED007690ED /* PoCountess.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 462E52D1283E45ED007690ED /* PoCountess.xcdatamodeld */; };
+		462E52E5283EDC33007690ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52E4283EDC33007690ED /* AppDelegate.swift */; };
+		462E52EA283EDC40007690ED /* Localizable.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 462E52E6283EDC40007690ED /* Localizable.stringsdict */; };
+		462E52EB283EDC40007690ED /* AppStateRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52E7283EDC40007690ED /* AppStateRegistry.swift */; };
+		462E52ED283EDC40007690ED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 462E52E9283EDC40007690ED /* Localizable.strings */; };
+		462E52F3283EDC6A007690ED /* CountersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52EF283EDC6A007690ED /* CountersList.swift */; };
+		462E52F4283EDC6A007690ED /* CounterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52F0283EDC6A007690ED /* CounterRow.swift */; };
+		462E52F5283EDC6A007690ED /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52F1283EDC6A007690ED /* CounterView.swift */; };
+		462E52F6283EDC6A007690ED /* CounterForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52F2283EDC6A007690ED /* CounterForm.swift */; };
+		462E5308283EDC79007690ED /* CountAPIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52F8283EDC79007690ED /* CountAPIKey.swift */; };
+		462E5309283EDC79007690ED /* DomainRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52FA283EDC79007690ED /* DomainRow.swift */; };
+		462E530A283EDC79007690ED /* DomainsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52FB283EDC79007690ED /* DomainsList.swift */; };
+		462E530B283EDC79007690ED /* DomainForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52FC283EDC79007690ED /* DomainForm.swift */; };
+		462E530C283EDC79007690ED /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52FD283EDC79007690ED /* WelcomeView.swift */; };
+		462E530D283EDC79007690ED /* Persistence+Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E52FF283EDC79007690ED /* Persistence+Demo.swift */; };
+		462E530E283EDC79007690ED /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5300283EDC79007690ED /* Persistence.swift */; };
+		462E530F283EDC79007690ED /* PoCountess.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 462E5301283EDC79007690ED /* PoCountess.xcdatamodeld */; };
+		462E5310283EDC79007690ED /* Domain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5303283EDC79007690ED /* Domain.swift */; };
+		462E5311283EDC79007690ED /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5304283EDC79007690ED /* Counter.swift */; };
+		462E5312283EDC79007690ED /* BarCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5306283EDC79007690ED /* BarCounterView.swift */; };
+		462E5313283EDC79007690ED /* BarCountersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5307283EDC79007690ED /* BarCountersList.swift */; };
+		462E5315283EDD1B007690ED /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462E5314283EDD1B007690ED /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		462E52C3283E45ED007690ED /* PoCountess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PoCountess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		462E52C6283E45ED007690ED /* PoCountessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoCountessApp.swift; sourceTree = "<group>"; };
-		462E52C8283E45ED007690ED /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		462E52CA283E45ED007690ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		462E52CD283E45ED007690ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		462E52CF283E45ED007690ED /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		462E52D2283E45ED007690ED /* PoCountess.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PoCountess.xcdatamodel; sourceTree = "<group>"; };
 		462E52D4283E45ED007690ED /* PoCountess.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PoCountess.entitlements; sourceTree = "<group>"; };
+		462E52E3283EDC1E007690ED /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		462E52E4283EDC33007690ED /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		462E52E6283EDC40007690ED /* Localizable.stringsdict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.stringsdict; path = Localizable.stringsdict; sourceTree = "<group>"; };
+		462E52E7283EDC40007690ED /* AppStateRegistry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStateRegistry.swift; sourceTree = "<group>"; };
+		462E52E9283EDC40007690ED /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		462E52EF283EDC6A007690ED /* CountersList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountersList.swift; sourceTree = "<group>"; };
+		462E52F0283EDC6A007690ED /* CounterRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterRow.swift; sourceTree = "<group>"; };
+		462E52F1283EDC6A007690ED /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		462E52F2283EDC6A007690ED /* CounterForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterForm.swift; sourceTree = "<group>"; };
+		462E52F8283EDC79007690ED /* CountAPIKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountAPIKey.swift; sourceTree = "<group>"; };
+		462E52FA283EDC79007690ED /* DomainRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainRow.swift; sourceTree = "<group>"; };
+		462E52FB283EDC79007690ED /* DomainsList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainsList.swift; sourceTree = "<group>"; };
+		462E52FC283EDC79007690ED /* DomainForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainForm.swift; sourceTree = "<group>"; };
+		462E52FD283EDC79007690ED /* WelcomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		462E52FF283EDC79007690ED /* Persistence+Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Persistence+Demo.swift"; sourceTree = "<group>"; };
+		462E5300283EDC79007690ED /* Persistence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		462E5302283EDC79007690ED /* Shared.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Shared.xcdatamodel; sourceTree = "<group>"; };
+		462E5303283EDC79007690ED /* Domain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Domain.swift; sourceTree = "<group>"; };
+		462E5304283EDC79007690ED /* Counter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		462E5306283EDC79007690ED /* BarCounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarCounterView.swift; sourceTree = "<group>"; };
+		462E5307283EDC79007690ED /* BarCountersList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarCountersList.swift; sourceTree = "<group>"; };
+		462E5314283EDD1B007690ED /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +77,7 @@
 		462E52BA283E45ED007690ED = {
 			isa = PBXGroup;
 			children = (
+				462E52E3283EDC1E007690ED /* README.md */,
 				462E52C5283E45ED007690ED /* PoCountess */,
 				462E52C4283E45ED007690ED /* Products */,
 			);
@@ -57,11 +95,18 @@
 			isa = PBXGroup;
 			children = (
 				462E52C6283E45ED007690ED /* PoCountessApp.swift */,
-				462E52C8283E45ED007690ED /* ContentView.swift */,
+				462E52E4283EDC33007690ED /* AppDelegate.swift */,
+				462E52E7283EDC40007690ED /* AppStateRegistry.swift */,
+				462E5314283EDD1B007690ED /* MainView.swift */,
+				462E52EE283EDC6A007690ED /* Counters */,
+				462E52F9283EDC79007690ED /* Domains */,
+				462E5305283EDC79007690ED /* Menu Bar */,
+				462E52F7283EDC79007690ED /* Network */,
+				462E52FE283EDC79007690ED /* Persistence */,
+				462E52E9283EDC40007690ED /* Localizable.strings */,
+				462E52E6283EDC40007690ED /* Localizable.stringsdict */,
 				462E52CA283E45ED007690ED /* Assets.xcassets */,
-				462E52CF283E45ED007690ED /* Persistence.swift */,
 				462E52D4283E45ED007690ED /* PoCountess.entitlements */,
-				462E52D1283E45ED007690ED /* PoCountess.xcdatamodeld */,
 				462E52CC283E45ED007690ED /* Preview Content */,
 			);
 			path = PoCountess;
@@ -73,6 +118,57 @@
 				462E52CD283E45ED007690ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		462E52EE283EDC6A007690ED /* Counters */ = {
+			isa = PBXGroup;
+			children = (
+				462E52EF283EDC6A007690ED /* CountersList.swift */,
+				462E52F0283EDC6A007690ED /* CounterRow.swift */,
+				462E52F1283EDC6A007690ED /* CounterView.swift */,
+				462E52F2283EDC6A007690ED /* CounterForm.swift */,
+			);
+			path = Counters;
+			sourceTree = "<group>";
+		};
+		462E52F7283EDC79007690ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				462E52F8283EDC79007690ED /* CountAPIKey.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		462E52F9283EDC79007690ED /* Domains */ = {
+			isa = PBXGroup;
+			children = (
+				462E52FA283EDC79007690ED /* DomainRow.swift */,
+				462E52FB283EDC79007690ED /* DomainsList.swift */,
+				462E52FC283EDC79007690ED /* DomainForm.swift */,
+				462E52FD283EDC79007690ED /* WelcomeView.swift */,
+			);
+			path = Domains;
+			sourceTree = "<group>";
+		};
+		462E52FE283EDC79007690ED /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				462E52FF283EDC79007690ED /* Persistence+Demo.swift */,
+				462E5300283EDC79007690ED /* Persistence.swift */,
+				462E5301283EDC79007690ED /* PoCountess.xcdatamodeld */,
+				462E5303283EDC79007690ED /* Domain.swift */,
+				462E5304283EDC79007690ED /* Counter.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		462E5305283EDC79007690ED /* Menu Bar */ = {
+			isa = PBXGroup;
+			children = (
+				462E5306283EDC79007690ED /* BarCounterView.swift */,
+				462E5307283EDC79007690ED /* BarCountersList.swift */,
+			);
+			path = "Menu Bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +230,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				462E52CE283E45ED007690ED /* Preview Assets.xcassets in Resources */,
+				462E52ED283EDC40007690ED /* Localizable.strings in Resources */,
 				462E52CB283E45ED007690ED /* Assets.xcassets in Resources */,
+				462E52EA283EDC40007690ED /* Localizable.stringsdict in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,10 +243,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				462E52D0283E45ED007690ED /* Persistence.swift in Sources */,
-				462E52C9283E45ED007690ED /* ContentView.swift in Sources */,
-				462E52D3283E45ED007690ED /* PoCountess.xcdatamodeld in Sources */,
+				462E5308283EDC79007690ED /* CountAPIKey.swift in Sources */,
+				462E5315283EDD1B007690ED /* MainView.swift in Sources */,
+				462E530E283EDC79007690ED /* Persistence.swift in Sources */,
+				462E52F3283EDC6A007690ED /* CountersList.swift in Sources */,
+				462E530B283EDC79007690ED /* DomainForm.swift in Sources */,
+				462E52EB283EDC40007690ED /* AppStateRegistry.swift in Sources */,
+				462E5313283EDC79007690ED /* BarCountersList.swift in Sources */,
+				462E52E5283EDC33007690ED /* AppDelegate.swift in Sources */,
+				462E52F4283EDC6A007690ED /* CounterRow.swift in Sources */,
+				462E52F6283EDC6A007690ED /* CounterForm.swift in Sources */,
+				462E5309283EDC79007690ED /* DomainRow.swift in Sources */,
 				462E52C7283E45ED007690ED /* PoCountessApp.swift in Sources */,
+				462E5311283EDC79007690ED /* Counter.swift in Sources */,
+				462E52F5283EDC6A007690ED /* CounterView.swift in Sources */,
+				462E530A283EDC79007690ED /* DomainsList.swift in Sources */,
+				462E530C283EDC79007690ED /* WelcomeView.swift in Sources */,
+				462E530D283EDC79007690ED /* Persistence+Demo.swift in Sources */,
+				462E530F283EDC79007690ED /* PoCountess.xcdatamodeld in Sources */,
+				462E5310283EDC79007690ED /* Domain.swift in Sources */,
+				462E5312283EDC79007690ED /* BarCounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,12 +460,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		462E52D1283E45ED007690ED /* PoCountess.xcdatamodeld */ = {
+		462E5301283EDC79007690ED /* PoCountess.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				462E52D2283E45ED007690ED /* PoCountess.xcdatamodel */,
+				462E5302283EDC79007690ED /* Shared.xcdatamodel */,
 			);
-			currentVersion = 462E52D2283E45ED007690ED /* PoCountess.xcdatamodel */;
+			currentVersion = 462E5302283EDC79007690ED /* Shared.xcdatamodel */;
 			path = PoCountess.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

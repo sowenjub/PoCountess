@@ -1,0 +1,34 @@
+/* 
+  Localizable.strings
+  Countess
+
+  Created by Arnaud Joubay on 19/05/2022.
+  
+*/
+
+"welcome.title" = "Greetings!";
+"welcome.body" = "It's awfully quiet around here. 😑
+
+Time to **add your first Domain** and hear all about what's happening there.
+
+Well. Get to it already!";
+"welcome.demo" = "Feeling lost? Take a cue from my ladies-in-waiting and listen to the county news:";
+"welcome.loadDemo" = "Go mingle";
+
+"domain.add" = "Add Domain";
+"domain.namespace.label" = "Domain name: its unique identifier";
+"domain.title.label" = "Domain title: its human name";
+
+"counters.refresh" = "Refresh values";
+
+"counter.add" = "Add Counter";
+"counter.create" = "Create";
+"counter.key.label" = "Counter key: its unique identifier";
+"counter.title.label" = "Counter title: its human name";
+"counter.hit.hint" = "Request Countapi to hit the key (increase the counter's value by 1)";
+"counter.create.hint" = "Request Countapi to create the key";
+"counter.error.hint" = "Countapi request error";
+"counter.value.label" = "Counter value";
+"counter.ttl.about" = "Keys expire 6 months after their last update";
+"counter.protected.button.true" = "Manual increment locked";
+"counter.protected.button.false" = "Manual increment possible";

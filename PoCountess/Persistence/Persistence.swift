@@ -1,8 +1,8 @@
 //
 //  Persistence.swift
-//  PoCountess
+//  Shared
 //
-//  Created by Arnaud Joubay on 25/05/2022.
+//  Created by Arnaud Joubay on 11/05/2022.
 //
 
 import CoreData
@@ -13,9 +13,14 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
-        for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+        for index in 0..<5 {
+            let newDomain = Domain(context: viewContext)
+            newDomain.namespace = "app.countess.preview.\(index)"
+            for index in 0..<10 {
+                let newCounter = Counter(context: viewContext)
+                newCounter.key = "key_\(index)"
+                newDomain.addToCounters(newCounter)
+            }
         }
         do {
             try viewContext.save()
@@ -28,10 +33,10 @@ struct PersistenceController {
         return result
     }()
 
-    let container: NSPersistentContainer
+    let container: NSPersistentCloudKitContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "PoCountess")
+        container = NSPersistentCloudKitContainer(name: "PoCountess")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
@@ -52,5 +57,14 @@ struct PersistenceController {
             }
         })
         container.viewContext.automaticallyMergesChangesFromParent = true
+    }
+}
+
+extension NSManagedObjectContext {
+    @discardableResult
+    func saveIfChanges() throws -> Bool {
+        guard hasChanges else { return false }
+        try save()
+        return true
     }
 }

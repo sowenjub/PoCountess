@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21E258" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Counter" representedClassName="Counter" syncable="YES" codeGenerationType="class">
+        <attribute name="isProtected" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="YES"/>
+        <attribute name="key" optional="YES" attributeType="String"/>
+        <attribute name="position" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="domain" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Domain" inverseName="counters" inverseEntity="Domain"/>
+        <relationship name="pastValues" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PastValue" inverseName="counter" inverseEntity="PastValue"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="counters" inverseEntity="Tag"/>
+    </entity>
+    <entity name="Domain" representedClassName="Domain" syncable="YES" codeGenerationType="class">
+        <attribute name="namespace" optional="YES" attributeType="String"/>
+        <attribute name="position" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="counters" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Counter" inverseName="domain" inverseEntity="Counter"/>
+        <relationship name="tags" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Tag" inverseName="domain" inverseEntity="Tag"/>
+    </entity>
+    <entity name="PastValue" representedClassName="PastValue" syncable="YES" codeGenerationType="class">
+        <attribute name="fetchedAt" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="value" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="counter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Counter" inverseName="pastValues" inverseEntity="Counter"/>
+    </entity>
+    <entity name="Tag" representedClassName="Tag" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="position" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="counters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Counter" inverseName="tags" inverseEntity="Counter"/>
+        <relationship name="domain" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Domain" inverseName="tags" inverseEntity="Domain"/>
+    </entity>
+    <elements>
+        <element name="Counter" positionX="-63" positionY="-9" width="128" height="134"/>
+        <element name="Domain" positionX="-63" positionY="-18" width="128" height="104"/>
+        <element name="PastValue" positionX="-45" positionY="54" width="128" height="74"/>
+        <element name="Tag" positionX="-54" positionY="27" width="128" height="89"/>
+    </elements>
+</model>
